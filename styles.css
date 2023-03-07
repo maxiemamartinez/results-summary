@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'HankenGrotesk';
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -6,7 +17,9 @@ main {
     justify-content: center;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     margin: 0;
 }
 
@@ -17,38 +30,192 @@ h1, h2, p {
     border-radius: 20px;
     padding: 40px;
 }
+
 .explain {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.circle{
+.title-summary {
+    font-size: 32px;
+    color: black;
+    font-weight: 800;
+    text-align: left;
+}
+
+.title {
+    font-size: 32px;
+    color:rgba(168,163,253,255);
+    font-weight: 800;
+}
+
+.mid-text {
+    font-size: 48px;
+    color: rgba(254,255,252,255);
+    font-weight: 800;
+}
+
+.mid-p {
+    font-size: 24px;
+    color: rgba(168,163,253,255);
+}
+
+.circle {
     border-radius: 90px;
     width: 180px;
     height: 180px;
-    background-color: blue; 
+    background-color: rgba(69, 44, 221, 255);
     display: flex;
     align-items: center;
-    justify-content: center;   
-    flex-direction: column;     
+    justify-content: center;
+    flex-direction: column;
 }
 
 .result {
-    background-color: purple;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(103, 67, 255, 1) 25%, rgba(76, 55, 244, 1) 50%, rgba(51, 45, 233, 1) 100%);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 80px;
 }
 
 .summary {
-    border: 1px solid green;
+    box-shadow: 4px 4px 4px 0 rgba(100, 100, 100, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .container {
     width: 800px;
     height: 600px;
     display: flex;
+}
+
+.end-text {
+    font-size: 32px;
+    color: rgba(253,255,255,255);
+    font-weight: 800;
+}
+
+.end-p {
+    font-size: 20px;
+    color: rgba(168,163,253,255);
+    text-align: center;
+}
+
+.react {
+    display: flex;
+    border-color: red;
+    background-color: rgba(255, 246, 245, 255);
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 12px;
+    align-items: center;
+}
+.padre {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.bolder {
+    font-weight: 800;
+}
+.memory {
+    display: flex;
+    border-color: yellow;
+    background-color: rgba(255, 251, 242, 255);
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.verbal {
+    display: flex;
+    border-color: green;
+    background-color: rgba(242, 251, 250, 255);
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 19px;
+    border-color: darkblue;
+    background-color: rgba(48, 59, 89, 255);
+    text-align: center;
+    color: white;
+    padding: 24px;
+}
+
+.visual {
+    display: flex;
+    border-color: blueviolet;
+    background-color: rgba(243, 243, 253, 255);
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.vis {
+    display: flex;
+    align-items: center;
+    color: rgba(43, 53, 144, 255);
+    gap: 8px;
+}
+
+.verb {
+    display: flex;
+    align-items: center;
+    color: rgba(71, 171, 146, 255);
+    gap: 8px;
+}
+
+.reaction {
+    display: flex;
+    align-items: center;
+    color: indianred;
+    gap: 8px;
+}
+
+.mem {
+    display: flex;
+    align-items: center;
+    color: rgba(241, 205, 120, 255);
+    gap: 8px;
+}
+
+.vis-result {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.verb-result {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.mem-result {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.reac-result {
+    display: flex;
+    gap: 4px;
+    align-items: center;
 }
